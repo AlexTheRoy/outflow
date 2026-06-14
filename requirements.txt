@@ -1,0 +1,16 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+httpx==0.27.2
+selectolax==0.3.21
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+sqlalchemy==2.0.35
+alembic==1.13.3
+psycopg2-binary==2.9.9  # Postgres driver; omit if you only use sqlite locally
+gunicorn==23.0.0        # production process manager (uvicorn workers)
+pytest==8.3.3           # tests (dev only)
+# Optional LLM SDKs — only needed if you set the matching API key.
+anthropic==0.39.0   # Claude (preferred)
+openai==1.51.0      # OpenAI (fallback)
+twilio==9.3.5       # outbound calls (only needed if you set Twilio creds)
